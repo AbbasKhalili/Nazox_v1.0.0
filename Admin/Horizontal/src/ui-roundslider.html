@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Round slider"})
+
+        <!-- roundslider css -->
+        <link rel="stylesheet" href="assets/libs/round-slider/roundslider.min.css">
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body data-topbar="dark" data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Round slider"})
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Slider Types</h4>
+        
+                                        <div class="row">
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Default</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="default-slider" class="rs-range-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Min range</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="min-range" class="rs-range-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Min range</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="range" class="rs-range-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Slider circle shapes</h4>
+        
+                                        <div class="row">
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Quarter top left</h5>
+                                                    
+                                                    <div dir="ltr">
+                                                        <div id="quarter-top-left" class="rs-range-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Half top</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="half-top" class="rs-range-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Example</h4>
+        
+                                        <div class="row">
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Square Roundslider</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="square-roundslider" class="rs-range-danger"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Handleshape Dot</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="handleshape-dot" class="rs-range-info"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Border Roundslider</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="border-roundslider" class="rs-range-success rs-circle-border"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4 mt-5">
+                                                    <h5 class="font-size-14 mb-4">Outer border</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="outer-border" class="rs-range-warning outer-border"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4 mt-5">
+                                                    <h5 class="font-size-14 mb-4">Outer border Dot</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="outer-border-dot" class="rs-range-primary outer-border-dot"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Handle shapes</h4>
+        
+                                        <div class="row">
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Handle arrow</h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="handle-arrow" class="rs-handle-arrow rs-range-danger"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-sm-6">
+                                                <div class="text-center mt-4">
+                                                    <h5 class="font-size-14 mb-4">Handle arrow dashed </h5>
+
+                                                    <div dir="ltr">
+                                                        <div id="handle-arrow-dashed" class="rs-handle-arrow-dash rs-range-success"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- roundslider js -->
+        <script src="assets/libs/round-slider/roundslider.min.js"></script>
+
+        <!-- roundslider init -->
+        <script src="assets/js/pages/roundslider.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

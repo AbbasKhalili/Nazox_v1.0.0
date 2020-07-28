@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Editable Tables"})
+
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-autoFill-bs4/css/autoFill.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-keytable-bs4/css/keyTable.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />   
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body data-topbar="dark" data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "Tables", "title": "Editable Tables"})
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Datatable Editable</h4>
+        
+                                        <div class="table-responsive">
+                                            <table class="table table-editable table-nowrap">
+                                                <thead>
+                                                    <tr>
+                                                    <th>ID</th>
+                                                    <th>Age (AutoFill)</th>
+                                                    <th>Qty (AutoFill and Editable)</th>
+                                                    <th>Cost (Editable)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td data-original-value="11">11</td>
+                                                    <td data-original-value="1"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">1</a></td>
+                                                    <td data-original-value="1.99"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">1.99</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td data-original-value="22">22</td>
+                                                    <td data-original-value="2"><a href="#" data-type="text" data-pk="2" class="editable" data-url="" data-title="Edit Quantity">2</a></td>
+                                                    <td data-original-value="2.99"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">2.99</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td data-original-value="33">33</td>
+                                                    <td data-original-value="3"><a href="#" data-type="text" data-pk="3" class="editable" data-url="" data-title="Edit Quantity">3</a></td>
+                                                    <td data-original-value="3.99"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">3.99</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td data-original-value="44">44</td>
+                                                    <td data-original-value="4"><a href="#" data-type="text" data-pk="4" class="editable" data-url="" data-title="Edit Quantity">4</a></td>
+                                                    <td data-original-value="4.99"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">4.99</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td data-original-value="55">55</td>
+                                                    <td data-original-value="5"><a href="#" data-type="text" data-pk="5" class="editable" data-url="" data-title="Edit Quantity">5</a></td>
+                                                    <td data-original-value="5.99"><a href="#" data-type="text" data-pk="1" class="editable" data-url="" data-title="Edit Quantity">5.99</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs//datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+        <script src="assets/libs/datatables.net-autoFill/js/dataTables.autoFill.min.js"></script>
+        <script src="assets/libs/datatables.net-autoFill-bs4/js/autoFill.bootstrap4.min.js"></script>
+
+        <script src="assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+
+        <!-- Responsive examples -->
+        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+        <script src="assets/libs/bootstrap-editable/js/index.js"></script>
+
+        <script src="assets/js/pages/table-editable.init.js"></script> 
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

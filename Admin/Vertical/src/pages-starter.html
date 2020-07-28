@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Starter page"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body data-sidebar="dark">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/topbar.html")
+
+            @@include("partials/sidebar.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "Utility", "title": "Starter page"})
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

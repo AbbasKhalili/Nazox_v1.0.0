@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Remix Icons"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    <body data-sidebar="dark">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/topbar.html")
+
+            @@include("partials/sidebar.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "Icons", "title": "Remix Icons"})
+
+                        <div class="row">
+                            <div class="col-12" id="icons">
+                                
+                            </div> <!-- end col-->
+                        </div> <!-- end row-->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- Remix icon js-->
+        <script src="assets/js/pages/remix-icons-list.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
